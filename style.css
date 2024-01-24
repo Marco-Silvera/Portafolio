@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --primary: rgb(245, 245, 245);
+    --secondary: rgb(234, 242, 253);
+    --tertiary: rgb(70, 70, 70);
+    --quaternary: rgb(42, 122, 228);
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    color: var(--tertiary);
+    background: var(--primary);
+}
+
+/* NAV-BAR */
+
+header {
+    padding: 40px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 80px;
+}
+
+nav .nav-link:hover {
+    color: var(--quaternary);
+}
+
+nav .nav-link {
+    transition: all 0.3s;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* BIENVENIDA */
+
+section.bienvenida {
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-bienvenida {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    margin: 0 80px;
+}
+
+.texto-bienvenida h1 {
+    font-size: 70px;
+}
+
+.texto-bienvenida p {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.texto-bienvenida ul {
+    display: flex;
+    padding: 0;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.texto-bienvenida {
+    padding-right: 20px;
+}
+
+.texto-bienvenida ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.container-bienvenida img {
+    max-height: 350px;
+    border-radius: 50%;
+}
+
+/* SOBRE MI */
+
+section.sobre-mi {
+    min-height: 500px;
+    background: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+
+.container-sobre-mi {
+    width: 1000px;
+    margin: 0 80px;
+}
+
+.container-sobre-mi h2, .container-skills h2, .container-hobbies h2, .container-formacion-academica h2, .container-proyectos h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}   
+
+.container-sobre-mi p {
+    font-size: 25px;
+}
+
+/* SKILLS */
+
+section.skills {
+    height: 500px;
+}
+
+.container-skills {
+    height: 500px;
+    margin: 0 80px;
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+section.lenguajes {
+    height: 240px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+article.card-lenguaje {
+    height: 100%;
+    width: 240px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    padding: 20px;
+}
+
+article.card-lenguaje i {
+    font-size: 50px;
+}
+
+article.card-lenguaje h3 {
+    font-size: 23px;
+}
+
+/* HOBBIES */
+
+section.hobbies {
+    height: 500px;
+}
+
+.container-hobbies {
+    height: 500px;
+    margin: 0 80px;
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.hobbie {
+    height: 240px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+article.card-hobbie {
+    height: 100%;
+    width: 240px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    padding: 20px;
+}
+
+article.card-hobbie i {
+    font-size: 40px;
+}
+
+article.card-hobbie h3 {
+    font-size: 23px;
+}
+
+/* FORMACION */
+
+section.formacion {
+    height: 650px;
+    background: var(--secondary);
+}
+
+.container-formacion-academica {
+    height: 650px;
+    margin: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.formaciones {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;  
+}
+
+article.card-formacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+}
+
+article.card-formacion img {
+    height: 300px;
+}
+
+.imagen-card-formacion {
+    min-width: 300px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.texto-card-formacion h3 {
+    font-size: 25px;
+}
+
+.texto-card-formacion p {
+    font-size: 20px;
+}
+
+/* PROYECTOS */
+
+section.proyectos {
+    height: 500px;
+}
+
+.container-proyectos {
+    height: 500px;
+    margin: 0 80px;
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.proyecto {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.imagen-proyecto img {
+    height: 300px;
+    border: 0.5px solid var(--quaternary);
+}
+
+.texto-proyecto h3 {
+    font-size: 25px;
+}
+
+.texto-proyecto p {
+    font-size: 20px;
+}
+
+.botones-proyecto {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.botones-proyecto  button:nth-child(1) {
+    padding: 18px;
+    border: 2px solid var(--quaternary);
+    background: var(--primary);
+    color: var(--quaternary);
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.botones-proyecto  button:nth-child(1):hover {
+    background: var(--quaternary);
+    color: var(--primary);
+}
+
+.botones-proyecto  button:nth-child(2) {
+    padding: 20px;
+    border: none;
+    background: var(--quaternary);
+    color: var(--primary);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.botones-proyecto  button:nth-child(2):hover {
+    background: var(--tertiary);
+}
+
+/* CONTACTO */
+
+section.contacto {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-contacto {
+    height: 600px;
+    margin: 0 80px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagen-contacto img {
+    height: 500px;
+}
+
+.formulario-contacto {
+    height: 500px;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contacto h2 {
+    font-size: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+.formulario-contacto form label:nth-child(4) input {
+    height: 100px;
+}
+
+form {
+    width: 100%;
+}
+
+.formulario-contacto h3 {
+    font-size: 25px;
+}
+
+.formulario-contacto p {
+    font-size: 20px;
+}
+
+.formulario-contacto form button {
+    margin-top: 23px;
+    padding: 18px;
+    font-size: 16px;
+    border: none;
+    background: var(--quaternary);
+    color: var(--primary);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: var(--tertiary);
+}
+
+/* FOOTER */
+
+footer {
+    height: 200px;
+    background: var(--tertiary);
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.redes a i {
+    color: var(--primary);
+    font-size: 40px;
+    transition: all 0.3s;
+}
+
+.redes a i:hover {
+    color: var(--quaternary);
+    font-size: 40px;
+}
+
+footer p {
+    text-align: center;
+    color: var(--primary);
+}

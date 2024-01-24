@@ -4,256 +4,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
     <title>Portafolio</title>
-
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="images/F-icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="/Portafolio/img/portafolio-profesional.png" alt="Maletin">
-        </div>
-        <h1>Portafolio</h1>
+
+    <header>
+        <!-- <nav class="sidebar">
+            <ul class="list-sidebar">
+                <li>
+                    <a class="nav-link" href="">Sobre mi</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="">Skills</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="">Hobbies</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="">Formación</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="">Proyectos</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="">Contacto</a>
+                </li>
+            </ul>
+        </nav> -->
+
+
         <nav>
-            <ul class="nav-links">
-                <li>
-                    <a href="#educacion">Educación</a>
+            <h2>
+                Portafolio
+            </h2>
+            <ul>
+                <li class="hideOnMobile">
+                    <a class="nav-link" href="#Sobre-mi">Sobre mi</a>
                 </li>
-                <li>
-                    <a href="#conocimiento">Conocimiento</a>
+                <li class="hideOnMobile">
+                    <a class="nav-link" href="#Skills">Skills</a>
                 </li>
-                <li>
-                    <a href="#habilidades">Habilidades</a>
+                <li class="hideOnMobile">
+                    <a class="nav-link" href="#Hobbies">Hobbies</a>
                 </li>
-                <li>
-                    <a href="#contacto">Contacto</a>
+                <li class="hideOnMobile">
+                    <a class="nav-link" href="#Formacion">Formación</a>
+                </li>
+                <li class="hideOnMobile">
+                    <a class="nav-link" href="#Proyectos">Proyectos</a>
+                </li>
+                <li class="hideOnMobile">
+                    <a class="nav-link" href="#Contacto">Contacto</a>
                 </li>
             </ul>
         </nav>
-        <a href="#" class="btn">
-            <button>Contacto</button>
-        </a>
-
-        <a onclick="openNav()" class="menu" href="#">
-            <button>Menu</button>
-        </a>
-        <div class="overlay" id="mobile-menu">
-            <a onclick="closeNav()" href="" class="close">&times;</a>
-            <div class="overlay-content">
-                <a href="#educacion">Educación</a>
-                <a href="#conocimiento">Conocimiento</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#contacto">Contacto</a>
-            </div>
-        </div>
     </header>
+
     <main>
-        <p>Estudiante de 10-mo ciclo de <strong>Ingeniería Informática</strong>. Especializado en Front-end</p>
-        <p><strong>Celular: 960-153-257</strong></p>
 
-        <h2>Perfil</h2>
-        <p>Soy una persona con valores como honestidad, responsabilidad, puntualidad, perseverancia, con capacidad de
-            aprendizaje para el desarrollo profesional.</p>
+        <section class="bienvenida">
+            <div class="container-bienvenida">
+                <div class="texto-bienvenida">
+                    <h1>
+                        Marco Silvera
+                    </h1>
+                    <p>
+                        Estudiante de Ingeniería Informática, especializado en desarrollo web frontend
+                    </p>
+                    <ul>
+                        <li>
 
-        <h2>Datos</h2>
-        <ul>
-            <li>Edad: 23 años</li>
-            <li>DNI: 72547440</li>
-            <li>Nacionalidad: Peruano</li>
-            <li>Fecha de nacimiento: 01/06/2000</li>
-            <li>Estado Civil: Soltero</li>
-        </ul>
+                            <a href="https://github.com/Marco-Silvera" target="_blank">Github
 
-        <h2>Contacto</h2>
-        <ul>
-            <li>Coop. Ramiro Priale Priale Mz: M Lt: 23 Ate - Sta. Clara</li>
-            <li>marksilver_1_0@hotmail.com</li>
-            <li>960-153-257</li>
-            <li>/marcosilvera</li>
-        </ul>
 
-        <h2 id="educacion">Educación</h2>
-        <ul>
-            <li>Primaria Completa | 2006 - 2011 | Colegio "Santa Luisa de Marillac"</li>
-            <li>Secundaria Completa | 2012 - 2014| Colegio "Santa Luisa de Marillac" | 2015 - 2016 | Colegio "Sagrada
-                Familia"</li>
-            <li>Universidad | 2018 - 2023 (Cursando actualmente) | Universidad Nacional Federico Villarreal</li>
-        </ul>
-        <h2 id="conocimiento">Conocimiento</h2>
-        <ul>
-            <li>Base de datos SQL - Nivel Básico</li>
-            <li>Python - Nivel Básico</li>
-            <li>HTML - Nivel Básico</li>
-            <li>CSS - Nivel Básico</li>
-            <li>Excel - Nivel Intermedio</li>
-            <li>Microsoft Office - Nivel Básico</li>
-            <li>Inglés Básico</li>
-        </ul>
-        <h2 id="habilidades">Habilidades</h2>
-        <ul>
-            <li>Capacidad de trabajo en equipo</li>
-            <li>Responsabilidad</li>
-            <li>Colaboración</li>
-            <li>Capacidad de aprendizaje</li>
-        </ul>
-        <h2>Horario</h2>
-        <table>
-            <caption>HORARIO DE CLASES</caption>
-            <thead>
-                <th colspan="2">TIPO DE AMBIENTE:</th>
-                <th>IQUIQUE</th>
-                <th colspan="3">AULA (404)</th>
-                <th>SEGUNDO SEMESTRE</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="7">HORARIO 2023-2 5TO-AÑO X CICLO SECC"A"-AULA 404</td>
-                </tr>
-                <tr>
-                    <td>HORAS</td>
-                    <td>LUNES</td>
-                    <td>MARTES</td>
-                    <td>MIÉRCOLES</td>
-                    <td>JUEVES</td>
-                    <td>VIERNES</td>
-                    <td>SÁBADO</td>
-                </tr>
-                <tr>
-                    <td>7:10-10:30</td>
-                    <td></td>
-                    <td></td>
-                    <td rowspan=""></td>
-                    <td></td>
-                    <td></td>
-                    <td>Taller de Tesis II Virtual Mg. Peña Carrillo Cesar</td>
-                </tr>
-                <tr>
-                    <td>10:30-13:50</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Taller de Tesis II Virtual Mg. Peña Carrillo Cesar</td>
-                </tr>
-                <tr>
-                    <td>13:50-17:10</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Gerencia y Consultoría Presencial Mg. Rea Morales V.</td>
-                </tr>
-                <tr>
-                    <td>17:10-18:50</td>
-                    <td rowspan="2">Tecnologías Emergentes Presencial Espinoza Silverio</td>
-                    <td>Seguridad y Auditoría Informática Presencial Mg. Rea Morales V.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>18:50-20:30</td>
-                    <td rowspan="2">Tecnología E-Business Presencial Espinoza Silverio</td>
-                    <td></td>
-                    <td rowspan="2">Practicas Pre Profesionales II Virtual Dr. Ronal Paredes Vargas</td>
-                    <td></td>
-                    <td rowspan="2">Ingeniería del Conocimiento Virtual Dr. Casas Miranda Roberto</td>
-                </tr>
-                <tr>
-                    <td>20:30-22:10</td>
-                    <td>Seguridad y Auditoría Informática Presencial Mg. Rea Morales V.</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="7">ESCUELA PROFESIONAL DE INGENIERÍA INFORMÁTICA</td>
-                </tr>
-            </tfoot>
-        </table>
+                                <i class="material-symbols-outlined">arrow_outward
+                                </i></a>
+
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/marcosilvera/" target="_blank">Linkedin
+                                <i class="material-symbols-outlined">arrow_outward
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Marco-Silvera" target="_blank">Curriculum
+                                <i class="material-symbols-outlined">arrow_outward
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <img class="profile" src="img/profile.webp" alt="Foto de perfil">
+            </div>
+        </section>
+
+        <section class="sobre-mi">
+            <div class="container-sobre-mi">
+                <h2 id="Sobre-mi">Sobre mi</h2>
+                <p>
+                    Estudiante de último año de Ingeniería Informática de la Universidad Nacional Federico Villarreal,
+                    especializado en desarrollo web Front-end. He adquirido un sólido conocimiento de herramientas y
+                    lenguajes como Microsoft Excel, HTML, CSS y Python. A nivel básico SQL, Javascript, Microsoft Office
+                    e
+                    Inglés. Si bien todavía tengo que adquirir experiencia profesional, estoy ansioso por aplicar mis
+                    habilidades en un entorno del mundo real a través de prácticas pre profesionales. Estoy seguro de
+                    que
+                    mis habilidades técnicas me permitirán hacer una contribución significativa a cualquier equipo.
+                </p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container-skills">
+                <h2 id="Skills">
+                    Skills
+                </h2>
+                <section class="lenguajes">
+                    <article class="card-lenguaje">
+                        <i class="fa-brands fa-html5" style="color: var(--quaternary);"></i>
+                        <h3>Html 5</h3>
+                    </article>
+
+                    <article class="card-lenguaje">
+                        <i class="fa-brands fa-css3-alt" style="color: var(--quaternary);"></i>
+                        <h3>CSS</h3>
+                    </article>
+
+                    <article class="card-lenguaje">
+                        <i class="fa-brands fa-js" style="color: var(--quaternary);"></i>
+                        <h3>Javascript</h3>
+                    </article>
+
+                    <article class="card-lenguaje">
+                        <i class="fa-brands fa-python" style="color: var(--quaternary);"></i>
+                        <h3>Python</h3>
+                    </article>
+
+                    <article class="card-lenguaje">
+                        <i class="fa-solid fa-database" style="color: var(--quaternary);"></i>
+                        <h3>SQL</h3>
+                    </article>
+
+                    <article class="card-lenguaje">
+                        <i class="fa-brands fa-git" style="color: var(--quaternary);"></i>
+                        <h3>Git</h3>
+                    </article>
+
+                    <article class="card-lenguaje">
+                        <i class="fa-brands fa-github" style="color: var(--quaternary);"></i>
+                        <h3>Github</h3>
+                    </article>
+
+                    <article class="card-lenguaje">
+                        <i class="fa-brands fa-figma" style="color: var(--quaternary);"></i>
+                        <h3>Figma</h3>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <section class="hobbies">
+            <div class="container-hobbies">
+                <h2 id="Hobbies">
+                    Hobbies
+                </h2>
+                <section class="hobbie">
+                    <article class="card-hobbie">
+                        <i class="fa-solid fa-headset" style="color: var(--quaternary);"></i>
+                        <h3>Video juegos</h3>
+                    </article>
+
+                    <article class="card-hobbie">
+                        <i class="fa-solid fa-music" style="color: var(--quaternary);"></i>
+                        <h3>Escuchar música</h3>
+                    </article>
+
+                    <article class="card-hobbie">
+                        <i class="fa-brands fa-js" style="color: var(--quaternary);"></i>
+                        <h3>Javascript</h3>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <section class="formacion">
+            <div class="container-formacion-academica">
+                <h2 id="Formacion">
+                    Formación académica
+                </h2>
+                <section class="formaciones">
+
+                    <article class="card-formacion">
+                        <div class="imagen-card-formacion">
+                            <img src="img/logo_Santa-Luisa-de-Marillac.png" alt="">
+                        </div>
+                        <div class="texto-card-formacion">
+                            <h3>
+                                Santa Luisa de Marillac
+                            </h3>
+                            <p>
+                                2006 - 2011
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card-formacion">
+                        <div class="imagen-card-formacion">
+                            <img src="img/logo-Sagrada-Familia.jpeg" alt="">
+                        </div>
+                        <div class="texto-card-formacion">
+                            <h3>
+                                Sagrada Familia
+                            </h3>
+                            <p>
+                                2012 - 2016
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card-formacion">
+                        <div class="imagen-card-formacion">
+                            <img src="img/logo_UNFV.png" alt="">
+                        </div>
+                        <div class="texto-card-formacion">
+                            <h3>
+                                UNFV - FIEI
+                            </h3>
+                            <p>
+                                2018 - Actualmente
+                            </p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <section class="proyectos">
+            <div class="container-proyectos">
+                <h2 id="Proyectos">
+                    Proyectos
+                </h2>
+                <section class="proyecto">
+                    <div class="imagen-proyecto">
+                        <img src="img/Proyecto-1.png" alt="">
+                    </div>
+                    <div class="texto-proyecto">
+                        <h3>Consultoria FIEI</h3>
+                        <p>
+                            Proyecto Universitario
+                        </p>
+                        <div class="botones-proyecto">
+                            <button>
+                                Repositorio
+                            </button>
+                            <button>
+                                Ver demo
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <div class="container-contacto">
+                <div class="imagen-contacto">
+                    <img src="img/contacto.webp" alt="">
+                </div>
+                <div class="formulario-contacto">
+                    <h2 id="Contacto">
+                        Contacto
+                    </h2>
+                    <p>
+                        ¿Quieres contactarme? <br>
+                        Complete el siguente formulario y me pondré en contacto con usted lo mas pronto posible.
+                    </p>
+                    <form action="">
+                        <label for="">Nombre
+                            <input type="text">
+                        </label>
+
+                        <label for="">Email
+                            <input type="email">
+                        </label>
+
+                        <label for="">Asunto
+                            <input type="text">
+                        </label>
+
+                        <label for="">Mensaje
+                            <input name="" id="" cols="30" rows="10"></input>
+                        </label>
+
+                        <button class="input">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <section>
-        <h2 id="contacto">Formulario de contacto</h2>
-        <form action="/" method="post">
-            <fieldset>
-                <legend>Información Personal</legend>
-                <div>
-                    <label>Nombre:
-                        <input type="text" name="name" placeholder="Marco Silvera Uchuya" required></label>
-                </div>
-                <div>
-                    <label>Email:
-                        <input type="email" name="apellido" placeholder="marksilver_1_0@hotmail.com" required></label>
-                </div>
-                <div>
-                    <label>Telefono:
-                        <input type="tel" name="telefono" placeholder="960153257" required pattern="">
-                    </label>
-                </div>
-            </fieldset>
-            <!--Todo botón dentro de un form se vuelve de tipo submit automaticamente-->
-            <button>Enviar contacto</button>
-        </form>
-    </section>
 
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <footer>
-        Copyright © 2023 - Portafolio MS
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/marcosilvera/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Marco-Silvera" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=51960153257" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="mailto:marksilver_1_0@hotmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+        <p>
+            Desarrollado por Marco silvera <br>
+            2024©
+        </p>
     </footer>
 
-    <script type="text/javascript" src="nav.js"></script>
 </body>
 
 </html>
