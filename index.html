@@ -13,34 +13,47 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 </head>
 
 <body>
 
     <header>
-        <!-- <nav class="sidebar">
+
+
+        <!-- NAV MOBILE -->
+
+        <nav class="sidebar">
             <ul class="list-sidebar">
                 <li>
-                    <a class="nav-link" href="">Sobre mi</a>
+                    <a onclick=hideSidebar() class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="30" viewBox="0 -960 960 960" width="30">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a>
                 </li>
                 <li>
-                    <a class="nav-link" href="">Skills</a>
+                    <a class="nav-link" href="#Sobre-mi">Sobre mi</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="">Hobbies</a>
+                    <a class="nav-link" href="#Skills">Skills</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="">Formación</a>
+                    <a class="nav-link" href="#Hobbies">Hobbies</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="">Proyectos</a>
+                    <a class="nav-link" href="#Formacion">Formación</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="">Contacto</a>
+                    <a class="nav-link" href="#Proyectos">Proyectos</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Contacto">Contacto</a>
                 </li>
             </ul>
-        </nav> -->
+        </nav>
 
+        <!-- NAV DESKTOP -->
 
         <nav>
             <h2>
@@ -51,7 +64,7 @@
                     <a class="nav-link" href="#Sobre-mi">Sobre mi</a>
                 </li>
                 <li class="hideOnMobile">
-                    <a class="nav-link" href="#Skills">Skills</a>
+                    <a class="nav-link" href="#Skills">Skillls</a>
                 </li>
                 <li class="hideOnMobile">
                     <a class="nav-link" href="#Hobbies">Hobbies</a>
@@ -64,6 +77,12 @@
                 </li>
                 <li class="hideOnMobile">
                     <a class="nav-link" href="#Contacto">Contacto</a>
+                </li>
+                <li class="menu-button" id="menuButton">
+                    <a onclick=toggleSidebar() class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="30" viewBox="0 -960 960 960" width="30">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a>
                 </li>
             </ul>
         </nav>
@@ -97,7 +116,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/Marco-Silvera" target="_blank">Curriculum
+                            <a href="CV - Silvera Uchuya Marco Antonio.pdf"
+                                download="CV - Silvera Uchuya Marco Antonio.pdf">Curriculum
                                 <i class="material-symbols-outlined">arrow_outward
                                 </i>
                             </a>
@@ -191,8 +211,8 @@
                     </article>
 
                     <article class="card-hobbie">
-                        <i class="fa-brands fa-js" style="color: var(--quaternary);"></i>
-                        <h3>Javascript</h3>
+                        <i class="fa-regular fa-futbol" style="color: var(--quaternary);"></i>
+                        <h3>Jugar Fútbol</h3>
                     </article>
                 </section>
             </div>
@@ -207,7 +227,7 @@
 
                     <article class="card-formacion">
                         <div class="imagen-card-formacion">
-                            <img src="img/logo_Santa-Luisa-de-Marillac.png" alt="">
+                            <img src="img/logo_Santa-Luisa-de-Marillac.webp" alt="">
                         </div>
                         <div class="texto-card-formacion">
                             <h3>
@@ -221,7 +241,7 @@
 
                     <article class="card-formacion">
                         <div class="imagen-card-formacion">
-                            <img src="img/logo-Sagrada-Familia.jpeg" alt="">
+                            <img src="img/logo-Sagrada-Familia.webp" alt="">
                         </div>
                         <div class="texto-card-formacion">
                             <h3>
@@ -235,7 +255,7 @@
 
                     <article class="card-formacion">
                         <div class="imagen-card-formacion">
-                            <img src="img/logo_UNFV.png" alt="">
+                            <img src="img/logo_UNFV.webp" alt="">
                         </div>
                         <div class="texto-card-formacion">
                             <h3>
@@ -257,7 +277,7 @@
                 </h2>
                 <section class="proyecto">
                     <div class="imagen-proyecto">
-                        <img src="img/Proyecto-1.png" alt="">
+                        <img src="img/Proyecto-1.webp" alt="">
                     </div>
                     <div class="texto-proyecto">
                         <h3>Consultoria FIEI</h3>
@@ -265,12 +285,8 @@
                             Proyecto Universitario
                         </p>
                         <div class="botones-proyecto">
-                            <button>
-                                Repositorio
-                            </button>
-                            <button>
-                                Ver demo
-                            </button>
+                            <a href="https://github.com/Marco-Silvera/ProyectoGerencia" target="_blank">Repositorio</a>
+                            <a href="https://www.consultoriafiei.com/" target="_blank">Ver demo</a>
                         </div>
                     </div>
                 </section>
@@ -323,7 +339,7 @@
             <a href="https://github.com/Marco-Silvera" target="_blank">
                 <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=51960153257" target="_blank">
+            <a href="https://wa.me/960153257" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
             <a href="mailto:marksilver_1_0@hotmail.com">

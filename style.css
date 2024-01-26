@@ -24,6 +24,7 @@ body {
 
 header {
     padding: 40px 0;
+    margin: 0 80px;
 }
 
 nav {
@@ -31,11 +32,68 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    margin: 0 80px;
+}
+
+.menu-button {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 10;
+    background: rgba(151, 151, 151, 0.503);
+    backdrop-filter: blur(1px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.sidebar ul {
+    margin-top: 0;
+    width: 100%;
+    padding-inline-start: 0px;
+
+}
+
+.sidebar a {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+nav ul.list-sidebar {
+    gap: 0;
+}
+
+.list-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-sidebar li {
+    width: 100%;
 }
 
 nav .nav-link:hover {
     color: var(--quaternary);
+}
+
+.sidebar a:hover {
+    background: rgba(110, 110, 110, 0.503);
+    color: var(--primary);
 }
 
 nav .nav-link {
@@ -64,14 +122,16 @@ section.bienvenida {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .container-bienvenida {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 500px;
+    min-height: 500px;
     margin: 0 80px;
+    gap: 20px;
 }
 
 .texto-bienvenida h1 {
@@ -88,10 +148,6 @@ section.bienvenida {
     padding: 0;
     gap: 40px;
     font-size: 20px;
-}
-
-.texto-bienvenida {
-    padding-right: 20px;
 }
 
 .texto-bienvenida ul li a {
@@ -111,16 +167,27 @@ section.sobre-mi {
     background: var(--secondary);
     display: flex;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .container-sobre-mi {
     width: 1000px;
     margin: 0 80px;
+    margin-bottom: 50px;
 }
 
-.container-sobre-mi h2, .container-skills h2, .container-hobbies h2, .container-formacion-academica h2, .container-proyectos h2 {
+.container-sobre-mi h2 {
     font-size: 40px;
     margin-bottom: 20px;
+    margin-top: 60px;
+    text-align: start;
+}
+
+.container-skills h2, .container-hobbies h2, .container-formacion-academica h2, .container-proyectos h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    text-align: center;
 }   
 
 .container-sobre-mi p {
@@ -130,11 +197,11 @@ section.sobre-mi {
 /* SKILLS */
 
 section.skills {
-    height: 500px;
+    max-height: 2200px;
 }
 
 .container-skills {
-    height: 500px;
+    max-height: 2200px;
     margin: 0 80px;
     background: var(--primary);
     display: flex;
@@ -144,17 +211,17 @@ section.skills {
 }
 
 section.lenguajes {
-    height: 240px;
+    max-height: 2200px;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 20px;
-    
+    flex-wrap: wrap;
 }
 
 article.card-lenguaje {
-    height: 100%;
-    width: 240px;
+    height: 240px;
+    min-width: 240px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -174,11 +241,12 @@ article.card-lenguaje h3 {
 /* HOBBIES */
 
 section.hobbies {
-    height: 500px;
+    max-height: 1000px;
+    min-height: 500px;
 }
 
 .container-hobbies {
-    height: 500px;
+    max-height: 1000px;
     margin: 0 80px;
     background: var(--primary);
     display: flex;
@@ -188,23 +256,25 @@ section.hobbies {
 }
 
 section.hobbie {
-    height: 240px;
+    max-height: 1000px;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 20px;
-    
+    flex-wrap: wrap;
+    padding-bottom: 60px;
 }
 
 article.card-hobbie {
-    height: 100%;
-    width: 240px;
+    height: 240px;
+    min-width: 240px;
     background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: end;
     gap: 10px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 article.card-hobbie i {
@@ -218,12 +288,13 @@ article.card-hobbie h3 {
 /* FORMACION */
 
 section.formacion {
-    height: 650px;
+    min-height: 500px;
+    max-height: 1500px;
     background: var(--secondary);
 }
 
 .container-formacion-academica {
-    height: 650px;
+    max-height: 1200px;
     margin: 0 80px;
     display: flex;
     flex-direction: column;
@@ -232,25 +303,28 @@ section.formacion {
 }
 
 section.formaciones {
-    height: 400px;
+    max-height: 1000px;
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 20px;  
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding-bottom: 60px;
 }
 
 article.card-formacion {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 250px;
-}
-
-article.card-formacion img {
     height: 300px;
 }
 
+article.card-formacion img {
+    height: 200px;
+}
+
 .imagen-card-formacion {
+    max-width: 300px;
     min-width: 300px;
     background: #fff;
     display: flex;
@@ -271,11 +345,12 @@ article.card-formacion img {
 /* PROYECTOS */
 
 section.proyectos {
-    height: 500px;
+    min-height: 500px;
+    padding-bottom: 20px;
 }
 
 .container-proyectos {
-    height: 500px;
+    min-height: 500px;
     margin: 0 80px;
     background: var(--primary);
     display: flex;
@@ -286,15 +361,23 @@ section.proyectos {
 
 section.proyecto {
     width: 100%;
-    height: 350px;
+    min-height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
+.imagen-proyecto {
+    max-width: 700px; /* Asegura que el contenedor no sea más ancho que el 100% del tamaño del contenedor padre */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción original de la imagen */
+    display: block; /* Elimina espacio adicional debajo de la imagen */
+}
+
 .imagen-proyecto img {
-    height: 300px;
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor padre */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción original de la imagen */
+    display: block; /* Elimina espacio adicional debajo de la imagen */ 
     border: 0.5px solid var(--quaternary);
 }
 
@@ -312,7 +395,7 @@ section.proyecto {
     align-items: center;
 }
 
-.botones-proyecto  button:nth-child(1) {
+.botones-proyecto a:nth-child(1) {
     padding: 18px;
     border: 2px solid var(--quaternary);
     background: var(--primary);
@@ -323,12 +406,23 @@ section.proyecto {
     font-size: 16px;
 }
 
-.botones-proyecto  button:nth-child(1):hover {
+.botones-proyecto  a:nth-child(1) {
+    padding: 18px;
+    border: 2px solid var(--quaternary);
+    background: var(--primary);
+    color: var(--quaternary);
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.botones-proyecto  a:nth-child(1):hover {
     background: var(--quaternary);
     color: var(--primary);
 }
 
-.botones-proyecto  button:nth-child(2) {
+.botones-proyecto  a:nth-child(2) {
     padding: 20px;
     border: none;
     background: var(--quaternary);
@@ -336,27 +430,45 @@ section.proyecto {
     cursor: pointer;
     transition: all 0.3s;
     font-size: 16px;
+    width: 120.98px;
+    text-align: center;
 }
 
-.botones-proyecto  button:nth-child(2):hover {
+.botones-proyecto  a:nth-child(2):hover {
     background: var(--tertiary);
 }
 
 /* CONTACTO */
 
 section.contacto {
-    height: 800px;
+    min-height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .container-contacto {
-    height: 600px;
+    min-height: 600px;
     margin: 0 80px;
     display: flex;
     align-items: center;
     gap: 20px;
+    padding-bottom: 20px;
+}
+
+.imagen-contacto {
+    max-width: 700px; /* Asegura que el contenedor no sea más ancho que el 100% del tamaño del contenedor padre */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción original de la imagen */
+    display: block; /* Elimina espacio adicional debajo de la imagen */
+    margin: 0 auto;
+}
+
+.imagen-contacto img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor padre */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción original de la imagen */
+    display: block; /* Elimina espacio adicional debajo de la imagen */
+    margin: 0 auto; 
+    border: 0.5px solid var(--quaternary);
 }
 
 .imagen-contacto img {
@@ -364,7 +476,7 @@ section.contacto {
 }
 
 .formulario-contacto {
-    height: 500px;
+    min-height: 500px;
     max-width: 550px;
     display: flex;
     flex-direction: column;
@@ -393,6 +505,7 @@ form {
 
 .formulario-contacto p {
     font-size: 20px;
+    padding-bottom: 20px;
 }
 
 .formulario-contacto form button {
@@ -439,3 +552,92 @@ footer p {
     text-align: center;
     color: var(--primary);
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1120px) {
+
+    .imagen-contacto img {
+        display: none;
+    }
+
+    .formulario-contacto form button {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 950px) {
+
+    .menu-button {
+        display: block;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .container-bienvenida {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .container-bienvenida img {
+        align-self: flex-start;
+        max-height: 200px;
+    }
+
+
+
+    /* PROYECTOS */
+
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-proyecto {
+        text-align: center;
+    }
+
+    .imagen-proyecto img {
+        min-width: 300px;
+    }
+
+    .imagen-contacto img {
+        min-width: 300px;
+    }
+
+    /* CONTACTO */
+
+    .container-contacto {
+        flex-direction: column;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+        .container-bienvenida, .container-contacto, .container-formacion-academica, .container-hobbies, .container-proyectos, .container-skills, .container-sobre-mi {
+        margin: 0 30px;
+    }
+
+    header {
+        margin: 0 30px;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .texto-bienvenida ul {
+        gap: 10px;
+    }
+    
+} 
