@@ -1,0 +1,137 @@
+---
+
+---
+
+<section
+  class="w-full max-w-[1200px] px-5 py-20 self-center flex gap-10 items-center justify-center mt-[82px]"
+>
+  <div>
+    <h1 class="text-7xl font-bold">Marco Silvera</h1>
+    <p class="text-[17px] ml-[1px] italic font-semibold">
+      Desarrollador Frontend | Egresado de Ingeniería Informática
+    </p>
+    <p class="text-xl mt-5">
+      Construyendo experiencias web rápidas y atractivas con tecnologías
+      modernas.
+    </p>
+    <div class="flex gap-5 mt-5">
+      <a class="contact flex items-center justify-center w-32 h-10 rounded-lg" href="mailto:msilveradev@gmail.com">Contáctame</a>
+      <a
+        class="rounded-lg relative w-44 h-10 cursor-pointer flex items-center border border-green-500 bg-green-500 group hover:bg-green-500 active:bg-green-500 active:border-green-500"
+      >
+        <span
+          class="text-gray-200 font-semibold ml-8 transform group-hover:translate-x-20 group-hover:hidden transition-all duration-300"
+          >Descargar CV</span
+        >
+        <span
+          class="absolute right-0 h-full w-10 rounded-lg bg-green-500 flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-all duration-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            height="24px"
+            width="24px"
+          >
+            <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+            <g
+              stroke-linejoin="round"
+              stroke-linecap="round"
+              id="SVGRepo_tracerCarrier"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g id="Interface / Download">
+                <path
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                  stroke-width="2"
+                  stroke="#f1f1f1"
+                  d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                  id="Vector"></path>
+              </g>
+            </g>
+          </svg>
+        </span>
+      </a>
+
+      <!-- <a
+        class="bg-white text-center w-64 rounded-2xl h-14 relative text-black text-xl font-semibold group flex justify-center items-center"
+        type="button"
+      >
+        <div
+          class="bg-green-400 rounded-xl h-12 w-1/5 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[248px] z-10 duration-500"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1024 1024"
+            height="25px"
+            width="25px"
+          >
+            <path
+              d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+              fill="#000000"></path>
+            <path
+              d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+              fill="#000000"></path>
+          </svg>
+        </div>
+        <p class="translate-x-2 items-center justify-center">Descargar CV</p>
+      </a> -->
+    </div>
+  </div>
+  <img
+    src="./Web developer avatar.webp"
+    alt="Avatar"
+    class="object-cover rounded-full overflow-hidden w-80"
+  />
+</section>
+
+
+
+<style>
+  /* From Uiverse.io by cssbuttons-io */ 
+.contact {
+  --color: #560bad;
+  line-height: 2.5em;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color);
+  text-align: center;
+}
+
+.contact:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.contact:hover {
+  color: #fff;
+}
+
+.contact:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.contact:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.contact:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+
+</style>
