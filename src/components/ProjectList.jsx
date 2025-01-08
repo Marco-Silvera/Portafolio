@@ -1,7 +1,8 @@
 import Card from "./Card"
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
+import "../styles/projects.css";
 
 const items = [
   {

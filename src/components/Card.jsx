@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import "../styles/projects.css";
 
@@ -14,11 +14,11 @@ const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, color, progre
 
   return (
     <div ref={container} className="cardContainer h-screen flex items-center justify-center sticky top-0">
-      <motion.div className="card bg-white rounded-[20px] bg-clip-padding backdrop-filter border border-gray-100 flex flex-col relative -top-[10%] h-[500px] w-[80%] p-9 origin-top shadow-[0_0_10px_rgba(0,0,0,0.1)]" style={{ scale, top: `calc(-10% + ${i * 25}px)` }}>
-        <h2 className="uppercase font-bold text-center m-0 text-[28px]">{nombre}</h2>
-        <div className="body flex h-full mt-5 gap-[30px]">
-          <div className="description w-[40%] top-[10%] flex flex-col justify-between">
-            <p>{descripcion}</p>
+      <motion.div className="card bg-white rounded-[20px] bg-clip-padding backdrop-filter border border-gray-100 flex flex-col relative -top-[10%] h-[900px] lg:h-[400px] xl:h-[500px] w-[80%] p-7 xl:p-9 origin-top shadow-[0_0_10px_rgba(0,0,0,0.1)]" style={{ scale, top: `calc(-10% + ${i * 25}px)` }}>
+        <h2 className="uppercase font-bold text-center m-0 text-xl xl:text-[28px]">{nombre}</h2>
+        <div className="body flex flex-col lg:flex-row h-full mt-5 gap-5 xl:gap-[30px] justify-center">
+          <div className="description w-full lg:w-1/2 xl:w-[40%] top-[10%] flex flex-col gap-4 lg:gap-0 justify-between">
+            <p className="text-sm xl:text-base text-pretty">{descripcion}</p>
             <ul className="max-w-md space-y-1 text-gray-600 list-inside">
               {bullets.map((bullet, index) => (
                 
@@ -39,32 +39,6 @@ const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, color, progre
               </li>
               ))}
             </ul>
-            {/* <ul class="max-w-md space-y-1 text-gray-600 list-inside">
-              <li class="flex items-center ml-3">
-                <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                </svg>
-                <p className="text-sm">
-                  Mejora de rendimiento del <b>23,4%</b>
-                </p>
-              </li>
-              <li class="flex items-center ml-3">
-                <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                </svg>
-                <p className="text-sm">
-                  Implementación de mejoras en SEO
-                </p>
-              </li>
-              <li class="flex items-center ml-3">
-                <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                </svg>
-                <p className="text-sm">
-                  Contenido automatizado con JSON
-                </p>
-              </li>
-            </ul> */}
             <div className="flex items-center gap-2">
               <a
                 className="bg-green-950 text-green-400 border border-green-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group text-sm h-[44.5px] z-10"
@@ -105,9 +79,9 @@ const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, color, progre
             </div>
           </div>
 
-          <div className="imageContainer relative w-3/5 h-full rounded-[20px] overflow-hidden shadow-md">
-            <motion.div style={{ scale: imageScale }} className="inner h-full w-full aspect-video">
-              <img className="h-full w-full object-cover" src={imagen} alt={`Imagen de ${nombre}`} />
+          <div className="imageContainer relative w-full lg:w-1/2 xl:w-3/5 rounded-[20px] overflow-hidden shadow-md aspect-video">
+            <motion.div style={{ scale: imageScale }} className="inner w-full">
+              <img className="object-cover" src={imagen} alt={`Imagen de ${nombre}`} />
             </motion.div>
           </div>
         </div>
