@@ -1,7 +1,7 @@
 ---
 const { title } = Astro.props;
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Footer from '../components/Footer/index'
+import Header from '../components/Header'
 ---
 
 <!doctype html>
@@ -14,11 +14,11 @@ import Footer from '../components/Footer.astro';
     <title>{title}</title>
   </head>
   <body class="flex flex-col items-center">
-    <Header/>
+    <Header client:load/>
     <slot />
-    <Footer/>
+    <Footer client:load/>
   </body>
-</html>
+</html> 
 
 <style>
   *{

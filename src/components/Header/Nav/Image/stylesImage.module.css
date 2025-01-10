@@ -1,0 +1,18 @@
+.imageContainer {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 450px;
+    position: relative;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}

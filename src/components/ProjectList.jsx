@@ -113,7 +113,7 @@ export default function ProjectList() {
 
   return (
     <section ref={container}
-      className="w-full max-w-[1200px] p-5 flex flex-col"
+      className="w-full max-w-[1200px] p-5 mb-28 md:m-0 flex flex-col"
     >
       <h2 className="text-6xl font-bold">Proyectos</h2>
       {
