@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "After Sick";
+  src: url("./AfterSick/AftersickDEMO-Book.woff2") format("woff2");
+  font-weight: 400; /* Normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "After Sick";
+  src: url("./AfterSick/AftersickDEMO-Regular.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "After Sick";
+  src: url("./AfterSick/AftersickDEMO-SemiBold.woff2") format("woff2");
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
