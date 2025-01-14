@@ -15,7 +15,7 @@ function Header() {
     return (
         <header className={styles.header}>
             <nav className={styles.bar}>
-                <a to='/'>Ms</a>
+                <a to='/' className="font-light">MS</a>
                 <div onMouseDown={() => { setIsActive(!isActive) }} className={styles.el}>
                     <div
                         className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}

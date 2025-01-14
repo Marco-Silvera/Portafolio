@@ -50,6 +50,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  font-weight: 300;
 }
 
 .el p:nth-of-type(2) {

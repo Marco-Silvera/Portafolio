@@ -15,7 +15,7 @@ const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, progress, ran
   return (
     <div ref={container} className="cardContainer h-screen flex items-center justify-center sticky top-0">
       <motion.div className="card bg-white rounded-[20px] border border-gray-100 flex flex-col justify-center relative h-auto w-full px-5 py-10 sm:p-10 origin-top shadow-[0_0_10px_rgba(0,0,0,0.1)]" style={{ scale, top: `calc(-5% + ${i * 25}px)` }}>
-        <h2 className="uppercase font-bold text-center m-0 text-xl xl:text-[28px]">{nombre}</h2>
+        <h2 className="uppercase font-bold text-center m-0 text-sm sm:text-xl xl:text-[28px]">{nombre}</h2>
         <div className="body flex flex-col lg:flex-row mt-3 sm:mt-5 gap-5 sm:gap-10 xl:gap-[30px] justify-center">
           <div className="description w-full lg:w-1/2 xl:w-[40%] top-[10%] flex flex-col gap-4 justify-between">
             <p className="text-xs sm:text-sm xl:text-base text-pretty">{descripcion}</p>
