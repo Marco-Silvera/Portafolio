@@ -1,8 +1,7 @@
-import Card from "./Card"
+import Card from "../Card"
 import { useEffect, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
-import "../styles/projects.css";
 
 const items = [
   {
@@ -60,7 +59,7 @@ const items = [
     nombre: "Aluraflix",
     descripcion: "Proyecto de Alura ONE (Oracle Next Education), el cual busca replicar la interfaz de Netflix. Incluye secciones y permitr agregar, editar y eliminar películas.",
     imagen:
-    "./Screenshot_WEB_4.png",
+      "./Screenshot_WEB_4.png",
     demo: "https://alura-flix-pi-two.vercel.app/",
     repositorio: "https://github.com/Marco-Silvera/AluraFlix",
     path: "/proyecto-4",
@@ -76,7 +75,7 @@ const items = [
     nombre: "50 Projects in 50 Days",
     descripcion: "Proyecto de 50 días con 50 proyectos de HTML, CSS y JavaScript. Incluye proyectos de animaciones, efectos, diseños y funcionalidades.",
     imagen:
-    "./Screenshot_WEB_5.png",
+      "./Screenshot_WEB_5.png",
     demo: "https://marco-silvera.github.io/50-Projects/main/",
     repositorio: "https://github.com/Marco-Silvera/50-Projects",
     path: "/proyecto-4",
@@ -112,17 +111,18 @@ export default function ProjectList() {
   }, [])
 
   return (
-    <section ref={container}
-      className="w-full max-w-[1200px] p-5 mb-28 md:m-0 flex flex-col"
-    >
-      <h2 className="text-6xl font-bold">Proyectos</h2>
-      {
-        items.map((item, i) => {
-          const targetScale = 1 - ((items.length - i) * 0.05)
-          return <Card key={i} i={i} bullets={bullets} {...item} progress={scrollYProgress} range={[i * 0.25, 1]} targetScale={targetScale} ref={i === items.length - 1 ? lastCard : null} />
-        })
-      }
-    </section>
+    <div className="w-full flex flex-col justify-center items-center bg-proyecto2 bg-fixed bg-no-repeat bg-cover bg-center">
+      <section ref={container}
+        className="w-full max-w-[1200px] p-5 mb-28 md:m-0 flex flex-col"
+      >
+        {
+          items.map((item, i) => {
+            const targetScale = 1 - ((items.length - i) * 0.05)
+            return <Card key={i} i={i} bullets={bullets} {...item} progress={scrollYProgress} range={[i * 0.25, 1]} targetScale={targetScale} ref={i === items.length - 1 ? lastCard : null} />
+          })
+        }
+      </section>
+    </div>
   )
 }
 
