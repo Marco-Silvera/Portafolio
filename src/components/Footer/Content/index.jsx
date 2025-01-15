@@ -27,7 +27,7 @@ const Section2 = () => {
     return (
 
         <div className='flex justify-between items-end'>
-            <h1 className='text-[8vw] md:text-[10vw] leading-[0.8]'>Marco  Silvera</h1>
+            <h1 className='text-[8vw] md:text-[10vw] leading-[0.8] font-after-sick'>Marco  Silvera</h1>
             <p className='text-xs sm:text-base'>©2025 Silvera.dev</p>
         </div>
     )
@@ -40,7 +40,7 @@ const Nav = () => {
     return (
 
         <div className='flex flex-col gap-10 items-center justify-between sm:flex-row sm:justify-between sm:gap-20'>
-            <h2 className="text-3xl self-start sm:self-center font-bold text-[#212121] italic leading-5">
+            <h2 className="text-3xl sm:text-4xl self-start sm:self-center font-extrabold text-[#212121] italic leading-5">
                 MS
             </h2>
             <ul className="flex gap-5 sm:gap-10 justify-between sm:justify-center h-full w-full max-w-[300px] min-w-[200px]">

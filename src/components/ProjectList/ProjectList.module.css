@@ -1,0 +1,15 @@
+.brick-background {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 50'%3E%3Ctext x='0' y='30' font-size='20' fill='%23374151' font-weight='bold'%3EProyectos%3C/text%3E%3C/svg%3E"); /* Texto como SVG para mejor escalado */
+  background-repeat: repeat;
+  background-size: auto 50px; /* Ajusta la altura según necesites */
+  display: flex; /* Para centrar verticalmente el contenido */
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brick-background span {
+    display: inline-block;
+    transform: rotate(calc(var(--random) * 10deg)) translate(calc(var(--random) * 10px), calc(var(--random) * 5px)); /* Rotación y traslación aleatoria */
+    opacity: 0.7; /* Opacidad para un efecto más sutil */
+    margin: 2px;
+}
