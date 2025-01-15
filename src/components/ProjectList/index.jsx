@@ -7,7 +7,7 @@ const items = [
   {
     id: 1,
     nombre: "Pachamama Turismo Responsable",
-    descripcion: "Diseño y desarrollo de una web para una agencia de turismo responsable, con un enfoque en funcionalidad y experiencia del usuario. Incluye blog, formulario de contacto, galería de imágenes, diseño responsive y optimización SEO.",
+    descripcion: "Diseño y desarrollo de una web para una agencia de turismo, con un enfoque en funcionalidad, gestión de contenido y experiencia del usuario. Optimizado para SEO.",
     imagen:
       "./Screenshot_WEB_1.png",
     demo: "https://pachamama-project.vercel.app/",
@@ -24,7 +24,7 @@ const items = [
   {
     id: 2,
     nombre: "Catálogo de productos",
-    descripcion: "Catálogo de productos con carrito de compras, donde los usuarios pueden agregar, editar y eliminar productos. Utiliza Supabase para la gestión de datos y generación automática de páginas por producto agregado.",
+    descripcion: "Catálogo de productos con carrito de compras, permite a los usuarios gestionar productos. Utiliza Supabase para la gestión de datos y generación automática de páginas por producto agregado.",
     imagen:
       "./Screenshot_WEB_2.png",
     demo: "https://consultoriafiei.com/",
@@ -113,7 +113,7 @@ export default function ProjectList() {
   return (
     <div className="w-full flex flex-col justify-center items-center bg-proyecto2 bg-fixed bg-no-repeat bg-cover bg-center">
       <section ref={container}
-        className="w-full max-w-[1200px] p-5 mb-28 md:m-0 flex flex-col"
+        className="w-full max-w-[1000px] p-5 mb-28 md:m-0 flex flex-col"
       >
         {
           items.map((item, i) => {
