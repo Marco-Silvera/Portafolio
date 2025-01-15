@@ -3,10 +3,12 @@ import ProjectList from "../components/ProjectList";
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+import Experience from "../components/Experience/index.astro";
 ---
 
 <Layout>
   <Hero />
+  <Experience />
   <ProjectList client:visible />
   <Welcome />
 </Layout>
