@@ -4,8 +4,8 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'proyecto': 'url("./images/fondo proyectos.jpg")',
-				'proyecto2': 'url("./images/fondo proyectos2.jpg")'
+				'proyecto': 'url("/images/fondo proyectos.jpg")',
+				'proyecto2': 'url("/images/fondo proyectos2.jpg")'
 			},
 			fontFamily: {
 				'after-sick': ['After Sick', 'sans-serif'],
