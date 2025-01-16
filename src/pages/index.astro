@@ -4,11 +4,13 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Experience from "../components/Experience/index.astro";
 import Education from "../components/Education.astro";
+import Knowledge from "../components/Knowledge/index.astro"
 ---
 
 <Layout>
   <Hero />
   <Experience />
-  <Education />
   <ProjectList client:visible />
+  <Education />
+  <Knowledge />
 </Layout>
