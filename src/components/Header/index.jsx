@@ -1,19 +1,33 @@
 import { opacity, background } from "./anim"
 import { motion, AnimatePresence } from "framer-motion"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Nav from "./Nav"
 import styles from './Header.module.css'
 
 function Header() {
 
     const [isActive, setIsActive] = useState(false)
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     function toggleBurger() {
         setIsActive(!isActive);
     }
 
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
             <nav className={styles.bar}>
                 <a to='/' className="font-light">MS</a>
                 <div onMouseDown={() => { setIsActive(!isActive) }} className={styles.el}>

@@ -2,7 +2,7 @@
 export default function Content() {
 
     return (
-        <div className='bg-white py-16 px-5 md:px-12 h-full w-full flex flex-col justify-between select-none'>
+        <div className='bg-[#f7f5f2] py-16 px-5 md:px-12 h-full w-full flex flex-col justify-between select-none'>
             <Section1 />
             <Section2 />
         </div>

@@ -15,7 +15,12 @@ import '../fonts/fonts.css'
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="flex flex-col items-center text-[#212121]">
+  <body class="flex flex-col items-center">
+    <!-- <div class="fixed inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div> -->
+    <div class="fixed inset-0 -z-10 h-full w-full bg-white bg-gradient-to-t from-[#8d8daa] via-[#dfdfde] to-[#f7f5f2]"></div>
+    <!-- <div class="fixed z-[-2] h-full w-full bg-neutral-500"><div class="absolute inset-0 bg-purple-500 bg-[size:20px_20px] opacity-20 blur-[100px]"></div></div> -->
+    <!-- <div class="fixed inset-0 -z-10 h-full w-full bg-gray-500 [background:radial-gradient(125% 125% at 50% 10%, #ff0000 40%, #00ff00 70%, #0000ff 100%)]"></div> -->
+    <!-- <div class="fixed top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255))]"></div> -->
     <Header client:load/>
     <slot />
     <Footer client:load/>

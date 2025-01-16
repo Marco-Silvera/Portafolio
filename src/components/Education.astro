@@ -7,7 +7,7 @@ const education = [
     periodo: "2018 - 2024",
     descripcion:
       "Carrera enfocada en formar profesionales en tecnologías de la información. Promueve el desarrollo de habilidades analíticas y técnicas para enfrentar los desafíos tecnológicos con creatividad y eficiencia.",
-    habilidades: ["Astro", "JavaScript", "React", "Tailwind", "SEO"],
+    habilidades: ["Html", "CSS","JavaScript" , "SQL", "Python"],
     imagen: "/images/Escudo_UNFV.png",
   },
   {
@@ -24,14 +24,14 @@ const education = [
 ---
 
 <section
-  class="w-full max-w-[1000px] self-center text-[#212121] flex flex-col gap-5 md:gap-10 px-5 py-32"
+  class="w-full max-w-[1000px] self-center text-[#212121] flex flex-col gap-5 md:gap-10 px-5 py-24"
 >
   <h2 class="text-xl md:text-2xl lg:text-4xl font-bold">Educación</h2>
   {
     education.map((edu) => (
       <article class="bg-white p-5 rounded-lg shadow-md flex flex-col md:flex-row gap-5 items-center">
         <img
-          class="aspect-video object-contain h-24 md:h-40 my-3"
+          class="aspect-video object-contain h-24 md:h-40 my-0 sm:my-3"
           src={edu.imagen}
           alt={`Imagen de ${edu.titulo}`}
         />

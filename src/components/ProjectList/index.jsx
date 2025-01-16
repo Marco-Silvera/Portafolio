@@ -113,7 +113,7 @@ export default function ProjectList() {
   return (
     <div className="w-full flex flex-col justify-center items-center bg-proyecto2 bg-fixed bg-no-repeat bg-cover bg-center">
       <section ref={container}
-        className="w-full max-w-[1000px] p-5 mb-28 md:m-0 flex flex-col"
+        className="w-full max-w-[1000px] p-5 md:m-0 flex flex-col"
       >
         {
           items.map((item, i) => {

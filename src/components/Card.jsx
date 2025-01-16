@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import "../styles/projects.css";
 
 const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, progress, range, targetScale, bullets=[] }) => {
   const container = useRef(null);
