@@ -1,4 +1,4 @@
-import Card from "../Card"
+import Card from "./Card/index"
 import { useEffect, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
