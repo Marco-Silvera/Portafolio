@@ -14,7 +14,7 @@ const education = [
     id: 2,
     titulo: "Oracle Next Education",
     institucion: "Alura Latam - Oracle",
-    periodo: "Ene 2024 - Jun 2024",
+    periodo: "Ene-Jun 2024",
     descripcion:
       "Programa educativo de Oracle en colaboración con Alura Latam que forma desarrolladores web full stack, integrando tecnologías clave como JavaScript, React, HTML y CSS. El programa fortalece habilidades blandas, como comunicación efectiva y trabajo en equipo.",
     habilidades: ["Html", "CSS", "JavaScript", "React", "Habilidades blandas"],
@@ -37,10 +37,12 @@ const education = [
         />
         <section class="flex flex-col gap-4 border-t md:border-l pt-5 md:pt-0 md:pl-5 md:border-t-0">
           <header class="flex flex-col gap-2">
-            <h3 class="text-xl md:text-2xl font-semibold">{edu.titulo}</h3>
             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-0">
-              <h3 class="text-sm sm:text-base lg:text-lg">{edu.institucion}</h3>
-              <p class="text-xs md:text-sm font-light">{edu.periodo}</p>
+            <h3 class="text-xl md:text-2xl font-semibold">{edu.titulo}</h3>
+            <p class="text-xs md:text-sm font-light">{edu.periodo}</p>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-0">
+              <h3 class="text-sm sm:text-base lg:text-lg font-light italic">{edu.institucion}</h3>
             </div>
           </header>
           <p class="text-xs sm:text-sm lg:text-base text-pretty">
