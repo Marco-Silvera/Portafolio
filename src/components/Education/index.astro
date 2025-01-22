@@ -24,7 +24,7 @@ const education = [
 ---
 
 <section
-  class="w-full max-w-[1000px] self-center text-[#212121] flex flex-col gap-5 md:gap-10 px-5 py-24"
+  class="sectionEducation w-full max-w-[1000px] self-center text-[#212121] flex flex-col gap-5 md:gap-10 px-5 py-24"
 >
   <h2 class="text-xl md:text-2xl lg:text-4xl font-bold">Educación</h2>
   {
@@ -65,3 +65,22 @@ const education = [
     ))
   }
 </section>
+
+<script>
+  import ScrollReveal from "scrollreveal";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    ScrollReveal().reveal(".sectionEducation", {
+      duration: 1000,             // Duración de la animación
+      origin: "top",           // Dirección de la animación
+      distance: "100px",          // Distancia de desplazamiento
+      viewOffset: {               // Configura el desplazamiento de vista
+        top: 100,                 // Mueve el inicio de la animación un poco más adentro (ajusta este valor a tu necesidad)
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
+      reset: false                 // Si se debe reiniciar la animación al salir y entrar del viewport
+    });
+  });
+</script>

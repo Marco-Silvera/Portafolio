@@ -18,6 +18,7 @@
     "framer-motion": "^11.15.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "scrollreveal": "^4.0.9",
     "tailwindcss": "^3.4.17"
   }
 }

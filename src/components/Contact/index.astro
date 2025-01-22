@@ -3,7 +3,7 @@
 ---
 
 <section
-  class="w-full max-w-[1000px] self-center flex flex-col gap-5 md:gap-10 px-5 py-24"
+  class="sectionContact w-full max-w-[1000px] self-center flex flex-col gap-5 md:gap-10 px-5 py-24"
 >
   <h2 class="text-xl md:text-2xl lg:text-4xl font-bold">Contacto</h2>
   <section class="flex flex-col-reverse gap-5 sm:flex-row md:gap-10">
@@ -148,3 +148,22 @@
     </ul>
   </section>
 </section>
+
+<script>
+  import ScrollReveal from "scrollreveal";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    ScrollReveal().reveal(".sectionContact", {
+      duration: 1000,             // Duración de la animación
+      origin: "left",           // Dirección de la animación
+      distance: "200px",          // Distancia de desplazamiento
+      viewOffset: {               // Configura el desplazamiento de vista
+        top: 100,                 // Mueve el inicio de la animación un poco más adentro (ajusta este valor a tu necesidad)
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
+      reset: false            // Si se debe reiniciar la animación al salir y entrar del viewport
+    });
+  });
+</script>

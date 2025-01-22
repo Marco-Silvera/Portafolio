@@ -3,7 +3,7 @@
 ---
 
 <section
-  class="w-full max-w-[1000px] self-center text-[#212121] flex flex-col gap-5 md:gap-10 px-5 py-24"
+  class="sectionExperience w-full max-w-[1000px] self-center text-[#212121] flex flex-col gap-5 md:gap-10 px-5 py-24"
 >
   <h2 class="titulo text-xl md:text-2xl lg:text-4xl font-bold w-fit">
     Experiencia laboral
@@ -229,3 +229,15 @@
     </div>
   </article>
 </section>
+
+<script>
+  import ScrollReveal from "scrollreveal";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    ScrollReveal().reveal(".sectionExperience", {
+      duration: 1000,
+      origin: "top",
+      distance: "100px",
+    });
+  });
+</script>
