@@ -12,14 +12,14 @@ const links = [
         src: "home.png"
     },
     {
-        title: "Experiencia",
-        href: "/shop",
-        src: "shop.png"
-    },
-    {
         title: "Sobre mi",
         href: "/about",
         src: "home.png"
+    },
+    {
+        title: "Experiencia",
+        href: "/shop",
+        src: "shop.png"
     },
     {
         title: "Proyectos",
