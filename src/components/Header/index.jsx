@@ -27,7 +27,7 @@ function Header() {
     }
 
     return (
-        <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
+        <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`} data-header>
             <nav className={styles.bar}>
                 <a href="/" className="font-light"><img className={`${styles.logo}`}  src="/M.ico" /></a>
                 <div onMouseDown={() => { setIsActive(!isActive) }} className={styles.el}>
@@ -43,7 +43,7 @@ function Header() {
             </nav>
             <motion.div variants={background} initial="initial" animate={isActive ? "open" : "closed"} className={styles.background} onClick={toggleBurger}></motion.div>
             <AnimatePresence mode="wait">
-                {isActive && <Nav client:load />}
+                {isActive &&  <Nav closeMenu={() => setIsActive(false)} client:load />}
             </AnimatePresence>
         </header>
     )
