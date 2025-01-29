@@ -2,7 +2,7 @@
 export default function Content() {
 
     return (
-        <div className='bg-[#f7f5f2] py-16 px-5 md:px-12 h-full w-full flex flex-col justify-between select-none'>
+        <div className='bg-[#575861] py-16 px-5 md:px-12 h-full w-full flex flex-col justify-between select-none'>
             <Section1 />
             <Section2 />
         </div>
@@ -39,15 +39,12 @@ const Nav = () => {
 
     return (
 
-        <div className='flex flex-col gap-10 items-center justify-between sm:flex-row sm:justify-between sm:gap-20'>
-            <h2 className="text-3xl sm:text-4xl self-start sm:self-center font-extrabold text-[#212121] italic leading-5">
-                MS
-            </h2>
+        <div className='flex w-full justify-center md:justify-end'>
             <ul className="flex gap-5 sm:gap-10 justify-between sm:justify-center h-full w-full max-w-[300px] min-w-[200px]">
                 <li className="group relative inline-block h-full">
                     <a className="focus:outline-none cursor-pointer" href="https://wa.me/51960153257" target="_blank">
                         <svg
-                            fill="#212121"
+                            fill="#0F1014"
                             viewBox="0 0 256 259"
                             width="20"
                             height="20"
@@ -68,7 +65,7 @@ const Nav = () => {
                         <svg
                             width="20"
                             height="20"
-                            fill="#212121"
+                            fill="#0F1014"
                             xmlns="http://www.w3.org/2000/svg"
                             preserveAspectRatio="xMidYMid"
                             viewBox="0 0 256 256"
@@ -84,7 +81,7 @@ const Nav = () => {
                     <a className="focus:outline-none cursor-pointer" href="https://github.com/Marco-Silvera" target="_blank">
                         <svg
                             viewBox="0 0 256 250"
-                            fill="#212121"
+                            fill="#0F1014"
                             width="20"
                             height="20"
                             xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +103,7 @@ const Nav = () => {
                             height="20"
                             viewBox="0 0 24 24"
                         ><path
-                            fill="#212121"
+                            fill="#0F1014"
                             d="M2 20V4h20v16zm10-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z"
                         ></path></svg>
                     </a>

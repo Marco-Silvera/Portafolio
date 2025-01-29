@@ -111,8 +111,8 @@ export default function ProjectList() {
   }, [])
 
   return (
-    <div className="w-full flex flex-col justify-center items-center bg-proyecto2 bg-fixed bg-no-repeat bg-cover bg-center">
-      <h2 className="text-white top-[50px] lg:top-[100px] relative text-xl md:text-2xl lg:text-4xl font-bold">Proyectos</h2>
+    <div id="proyectos" className="w-full flex flex-col justify-center items-center bg-fixed bg-no-repeat bg-cover bg-center scroll-mt-[62px] gap-10">
+      <h2 className="top-[50px] lg:top-[100px] relative text-xl md:text-2xl lg:text-4xl w-fit bg-gradient-to-r from-[#9898A6] to-[#fdfdfe] text-transparent bg-clip-text uppercase font-normal tracking-[.96px]">Proyectos</h2>
       <section ref={container}
         className="w-full max-w-[1000px] p-5 md:m-0 flex flex-col"
       >

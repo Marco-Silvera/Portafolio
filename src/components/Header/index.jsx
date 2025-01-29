@@ -29,7 +29,7 @@ function Header() {
     return (
         <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
             <nav className={styles.bar}>
-                <a to='/' className="font-light">MS</a>
+                <a href="/" className="font-light"><img className={`${styles.logo}`}  src="/M.ico" /></a>
                 <div onMouseDown={() => { setIsActive(!isActive) }} className={styles.el}>
                     <div
                         className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}

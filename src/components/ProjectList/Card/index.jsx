@@ -12,18 +12,18 @@ const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, progress, ran
   const scale = useTransform(progress, range, [1, targetScale])
 
   return (
-    <div ref={container} className="cardContainer h-screen flex items-center justify-center sticky top-0">
-      <motion.div className="card bg-white rounded-[20px] border border-gray-100 flex flex-col justify-center relative h-auto w-full px-5 py-10 sm:p-10 origin-top shadow-[0_0_10px_rgba(0,0,0,0.1)]" style={{ scale, top: `calc(-5% + ${i * 25}px)` }}>
-        <h2 className="uppercase font-bold text-center m-0 text-sm sm:text-xl xl:text-[28px]">{nombre}</h2>
+    <div ref={container} className="cardContainer h-screen flex items-center justify-center sticky top-0 font-space-grotesk">
+      <motion.div className="card rounded-[20px] bg-[#0F1014] border border-[#575861] flex flex-col justify-center relative h-auto w-full px-5 py-10 sm:p-10 origin-top shadow-[0_0_10px_rgba(0,0,0,0.1)]" style={{ scale, top: `calc(-5% + ${i * 25}px)` }}>
+        <h2 className="uppercase font-normal text-center m-0 text-sm sm:text-xl xl:text-[28px] bg-gradient-to-r from-[#9898A6] to-[#fdfdfe] text-transparent bg-clip-text">{nombre}</h2>
         <div className="body flex flex-col lg:flex-row mt-3 sm:mt-5 gap-5 sm:gap-10 xl:gap-[30px] justify-center">
           <div className="description w-full lg:w-1/2 xl:w-[40%] top-[10%] flex flex-col gap-4 justify-between">
-            <p className="text-xs sm:text-sm xl:text-base text-pretty">{descripcion}</p>
-            <ul className="max-w-md space-y-1 text-gray-600 list-inside h-[90px] md:h-[100px] flex flex-col justify-center">
+            <p className="text-xs sm:text-sm xl:text-base text-pretty text-[#fdfdfe] font-thin">{descripcion}</p>
+            <ul className="max-w-md space-y-1 text-[#fdfdfe] list-inside h-[90px] md:h-[100px] flex flex-col justify-center">
               {bullets.map((bullet, index) => (
                 
                 <li key={index} className="flex items-center ml-3">
                 <svg
-                  className="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                  className="w-3.5 h-3.5 me-2 text-[#C58FFF] flex-shrink-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -39,11 +39,18 @@ const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, progress, ran
               ))}
             </ul>
             <div className="flex items-center gap-2">
-              <a
+              {/* <a
                 className="bg-green-950 text-green-400 border border-green-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group text-sm h-[44.5px] z-10"
                 href={demo} target="_blank"
               >
                 <span className="bg-green-400 shadow-green-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]" />
+                Ver demo
+              </a> */}
+              <a
+                className="bg-[#390566] text-[#C58FFF] border border-[#C58FFF] border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group text-sm h-[44.5px] z-10"
+                href={demo} target="_blank"
+              >
+                <span className="bg-[#594174] shadow-[#C58FFF] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]" />
                 Ver demo
               </a>
               <a
@@ -80,7 +87,7 @@ const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, progress, ran
 
           <div className="imageContainer relative w-full lg:w-1/2 xl:w-3/5 rounded-[20px] overflow-hidden shadow-md aspect-video">
             <motion.div style={{ scale: imageScale }} className="inner w-full h-full">
-              <img className="object-cover h-full w-full" src={imagen} alt={`Imagen de ${nombre}`} />
+              <img className="object-cover h-full w-full opacity-90" src={imagen} alt={`Imagen de ${nombre}`} />
             </motion.div>
           </div>
         </div>

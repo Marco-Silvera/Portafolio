@@ -2,13 +2,14 @@ import { motion } from 'framer-motion';
 import styles from './stylesBody.module.css'
 import { blur, translate } from '../../anim';
 
-export default function Body({ links, selectedLink, setSelectedLink }) {
+export default function Body({ links, selectedLink, setSelectedLink,  onLinkClick }) {
 
     const getChars = (word) => {
         let chars = [];
         word.split("").forEach((char, i) => {
             chars.push(
                 <motion.span
+                className='text-[#9898A6] font-space-grotesk'
                     custom={[i * 0.02, (word.length - i) * 0.01]}
                     variants={translate}
                     initial="initial"

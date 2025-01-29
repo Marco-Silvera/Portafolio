@@ -7,29 +7,29 @@ import Image from './Image';
 
 const links = [
     {
-        title: "Inicio",
-        href: "/",
-        src: "home.png"
-    },
-    {
         title: "Sobre mi",
-        href: "/about",
-        src: "home.png"
+        href: "#sobre-mi",
+        src: "experiencia-header.png"
     },
     {
         title: "Experiencia",
-        href: "/shop",
-        src: "shop.png"
+        href: "#experiencia",
+        src: "experiencia-header.png"
     },
     {
         title: "Proyectos",
-        href: "/lookbook",
-        src: "lookbook.png"
+        href: "#proyectos",
+        src: "proyectos-header.png"
+    },
+    {
+        title:"Conocimientos",
+        href: "#conocimientos",
+        src: "conocimientos-header.png"
     },
     {
         title: "Contacto",
-        href: "/contact",
-        src: "contact.png"
+        href: "#contacto",
+        src: "contacto-header.png"
     }
 ]
 

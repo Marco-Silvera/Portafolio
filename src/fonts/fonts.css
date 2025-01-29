@@ -18,3 +18,10 @@
   font-weight: 600; /* SemiBold */
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Neofolia";
+  src: url("./Neofolia/neofolia.ttf");
+  font-weight: 400; /* Normal */
+  font-style: normal;
+}

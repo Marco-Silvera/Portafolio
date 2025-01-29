@@ -1,5 +1,5 @@
 .header {
-  background-color: #f7f5f2;
+  background-color: #0F1014;
   position: fixed;
   width: 100%;
   box-sizing: border-box;
@@ -37,8 +37,9 @@
 
 .bar a {
   text-decoration: none;
-  color: black;
+  color: #9898A6;
   position: absolute;
+  font-family: 'Space Grotesk', sans-serif;
   left: 0;
 }
 
@@ -48,6 +49,7 @@
   justify-content: center;
   gap: 8px;
   cursor: pointer;
+  color: #9898A6;
 }
 
 .label {
@@ -73,7 +75,7 @@
   content: "";
   height: 1px;
   width: 100%;
-  background-color: black;
+  background-color: #9898A6;
   position: relative;
   display: block;
   transition: all 1s cubic-bezier(0.76, 0, 0.24, 1);
@@ -97,10 +99,19 @@
   top: 1px;
 }
 
+.logo {
+  height: 20px;
+}
+
 @media only screen and (min-width: 600px) {
 
   .bar {
     font-size: 15px;
+    height: 40px;
+  }
+
+  .logo {
+    height: 40px;
   }
 
 }
