@@ -9,7 +9,7 @@ const links = [
     {
         title: "Sobre mi",
         href: "#sobre-mi",
-        src: "experiencia-header.png"
+        src: "sobre-mi-header.png"
     },
     {
         title: "Experiencia",
@@ -20,6 +20,11 @@ const links = [
         title: "Proyectos",
         href: "#proyectos",
         src: "proyectos-header.png"
+    },
+    {
+        title: "Educación",
+        href: "#educacion",
+        src: "educacion-header.png"
     },
     {
         title:"Conocimientos",
