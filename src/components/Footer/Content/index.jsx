@@ -58,7 +58,7 @@ const Nav = () => {
                     </a>
                     <span
                         className="absolute -top-14 left-1/2 transform -translate-x-1/2 z-20 px-3 py-1 text-sm font-bold text-white bg-gray-900 rounded-lg shadow-lg transition-transform duration-300 ease-in-out scale-0 group-hover:scale-100"
-                    >Whatsapp</span>
+                    >WhatsApp</span>
                 </li>
                 <li className="group relative inline-block h-full">
                     <a className="focus:outline-none cursor-pointer" href="https://www.linkedin.com/in/marcosilvera/" target="_blank">

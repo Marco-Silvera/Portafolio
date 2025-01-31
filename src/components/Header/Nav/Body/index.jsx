@@ -9,7 +9,7 @@ export default function Body({ links, selectedLink, setSelectedLink, closeMenu }
         word.split("").forEach((char, i) => {
             chars.push(
                 <motion.span
-                    className='text-[#9898A6] font-space-grotesk'
+                    className='text-[#9898A6]'
                     custom={[i * 0.02, (word.length - i) * 0.01]}
                     variants={translate}
                     initial="initial"

@@ -12,7 +12,7 @@ const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, progress, ran
   const scale = useTransform(progress, range, [1, targetScale])
 
   return (
-    <div ref={container} className="cardContainer h-screen flex items-center justify-center sticky top-0 font-space-grotesk">
+    <div ref={container} className="cardContainer h-screen flex items-center justify-center sticky top-0">
       <motion.div className="card rounded-[20px] bg-[#0F1014] border border-[#575861] flex flex-col justify-center relative h-auto w-full px-5 py-10 sm:p-10 origin-top shadow-[0_0_10px_rgba(0,0,0,0.1)]" style={{ scale, top: `calc(-5% + ${i * 25}px)` }}>
         <h2 className="uppercase font-normal text-center m-0 text-sm sm:text-xl xl:text-[28px] bg-gradient-to-r from-[#9898A6] to-[#fdfdfe] text-transparent bg-clip-text">{nombre}</h2>
         <div className="body flex flex-col lg:flex-row mt-3 sm:mt-5 gap-5 sm:gap-10 xl:gap-[30px] justify-center">
@@ -87,7 +87,7 @@ const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, progress, ran
 
           <div className="imageContainer relative w-full lg:w-1/2 xl:w-3/5 rounded-[20px] overflow-hidden shadow-md aspect-video">
             <motion.div style={{ scale: imageScale }} className="inner w-full h-full">
-              <img className="object-cover h-full w-full opacity-90" src={imagen} alt={`Imagen de ${nombre}`} loading="lazy" />
+              <img className="object-cover h-full w-full opacity-90 aspect-video" src={imagen} alt={`Imagen de ${nombre}`} loading="lazy" />
             </motion.div>
           </div>
         </div>
