@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, progress, range, targetScale, bullets=[] }) => {
+const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, progress, range, targetScale, bullets = [] }) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -20,22 +20,22 @@ const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, progress, ran
             <p className="text-xs sm:text-sm xl:text-base text-pretty text-[#fdfdfe] font-thin">{descripcion}</p>
             <ul className="max-w-md space-y-1 text-[#fdfdfe] list-inside h-[90px] md:h-[100px] flex flex-col justify-center">
               {bullets.map((bullet, index) => (
-                
+
                 <li key={index} className="flex items-center ml-3">
-                <svg
-                  className="w-3.5 h-3.5 me-2 text-[#C58FFF] flex-shrink-0"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                </svg>
-                <p
-            className="text-xs sm:text-sm"
-            dangerouslySetInnerHTML={{ __html: bullet }}
-          />
-              </li>
+                  <svg
+                    className="w-3.5 h-3.5 me-2 text-[#C58FFF] flex-shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                  </svg>
+                  <p
+                    className="text-xs sm:text-sm"
+                    dangerouslySetInnerHTML={{ __html: bullet }}
+                  />
+                </li>
               ))}
             </ul>
             <div className="flex items-center gap-2">
@@ -87,7 +87,7 @@ const Card = ({ i, nombre, descripcion, imagen, demo, repositorio, progress, ran
 
           <div className="imageContainer relative w-full lg:w-1/2 xl:w-3/5 rounded-[20px] overflow-hidden shadow-md aspect-video">
             <motion.div style={{ scale: imageScale }} className="inner w-full h-full">
-              <img className="object-cover h-full w-full opacity-90" src={imagen} alt={`Imagen de ${nombre}`} />
+              <img className="object-cover h-full w-full opacity-90" src={imagen} alt={`Imagen de ${nombre}`} loading="lazy" />
             </motion.div>
           </div>
         </div>

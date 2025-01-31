@@ -9,6 +9,7 @@ export default function Index({ src, isActive }) {
                 src={`/images/${src}`}
                 fill={true}
                 alt="image"
+                loading='lazy'
             />
         </motion.div>
     )
