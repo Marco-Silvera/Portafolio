@@ -9,32 +9,32 @@ const links = [
     {
         title: "Sobre mi",
         href: "#sobre-mi",
-        src: "sobre-mi-header.png"
+        src: "/sobre-mi-header.webp"
     },
     {
         title: "Experiencia",
         href: "#experiencia",
-        src: "experiencia-header.png"
+        src: "/experiencia-header.webp"
     },
     {
         title: "Proyectos",
         href: "#proyectos",
-        src: "proyectos-header.png"
+        src: "/proyectos-header.webp"
     },
     {
         title: "Educación",
         href: "#educacion",
-        src: "educacion-header.png"
+        src: "/educacion-header.webp"
     },
     {
         title:"Conocimientos",
         href: "#conocimientos",
-        src: "conocimientos-header.png"
+        src: "/conocimientos-header.webp"
     },
     {
         title: "Contacto",
         href: "#contacto",
-        src: "contacto-header.png"
+        src: "/contacto-header.webp"
     }
 ]
 

@@ -9,7 +9,7 @@ const items = [
     nombre: "Pachamama Turismo Responsable",
     descripcion: "Diseño y desarrollo de una web para una agencia de turismo, con un enfoque en funcionalidad, gestión de contenido y experiencia del usuario. Optimizado para SEO.",
     imagen:
-      "./Screenshot_WEB_1.png",
+      "/Screenshot_WEB_1.webp",
     demo: "https://pachamama-project.vercel.app/",
     repositorio: "https://github.com/Marco-Silvera/Pachamama",
     path: "/proyecto-1",
@@ -26,7 +26,7 @@ const items = [
     nombre: "Catálogo de productos",
     descripcion: "Catálogo de productos con carrito de compras, permite a los usuarios gestionar productos. Utiliza Supabase para la gestión de datos y generación automática de páginas por producto agregado.",
     imagen:
-      "./Screenshot_WEB_2.png",
+      "/Screenshot_WEB_2.webp",
     demo: "https://consultoriafiei.com/",
     repositorio: "https://github.com/Marco-Silvera/ProyectoGerencia",
     path: "/proyecto-2",
@@ -43,7 +43,7 @@ const items = [
     nombre: "Consultoria FIEI",
     descripcion: "Proyecto universitario que consiste en una web de consultoría para la FIEI. Incluye formulario de contacto, blog, galería de imágenes y diseño responsive.",
     imagen:
-      "./Screenshot_WEB_3.png",
+      "/Screenshot_WEB_3.webp",
     demo: "https://www.consultoriafiei.com/",
     repositorio: "https://github.com/Marco-Silvera/ProyectoGerencia",
     path: "/proyecto-3",
@@ -59,7 +59,7 @@ const items = [
     nombre: "Aluraflix",
     descripcion: "Proyecto de Alura ONE (Oracle Next Education), el cual busca replicar la interfaz de Netflix. Incluye secciones y permitr agregar, editar y eliminar películas.",
     imagen:
-      "./Screenshot_WEB_4.png",
+      "/Screenshot_WEB_4.webp",
     demo: "https://alura-flix-pi-two.vercel.app/",
     repositorio: "https://github.com/Marco-Silvera/AluraFlix",
     path: "/proyecto-4",
@@ -75,7 +75,7 @@ const items = [
     nombre: "50 Projects in 50 Days",
     descripcion: "Proyecto de 50 días con 50 proyectos de HTML, CSS y JavaScript. Incluye proyectos de animaciones, efectos, diseños y funcionalidades.",
     imagen:
-      "./Screenshot_WEB_5.png",
+      "/Screenshot_WEB_5.webp",
     demo: "https://marco-silvera.github.io/50-Projects/main/",
     repositorio: "https://github.com/Marco-Silvera/50-Projects",
     path: "/proyecto-4",
