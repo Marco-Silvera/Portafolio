@@ -2,16 +2,19 @@
 import ProjectList from "../components/ProjectList";
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero/index.astro";
-import About from "../components/About/index.astro"
+import About from "../components/About/index.astro";
 import Experience from "../components/Experience/index.astro";
 import Education from "../components/Education/index.astro";
 import Knowledge from "../components/Knowledge/index.astro";
 import Contact from "../components/Contact/index.astro";
 ---
 
-<Layout>
+<Layout
+  title="Marco Silvera - Desarrollador Web | Creando Soluciones Digitales Innovadoras"
+  description="Soy Marco Silvera, desarrollador web especializado en crear sitios web responsivos y aplicaciones interactivas. Explora mis proyectos y servicios en este portafolio." image="/miniatura.webp"
+>
   <Hero />
-  <About/>
+  <About />
   <Experience />
   <ProjectList client:visible />
   <Education />
