@@ -1,27 +1,31 @@
 @font-face {
   font-family: "After Sick";
-  src: url("./AfterSick/AftersickDEMO-Book.woff2") format("woff2");
+  src: url("/fonts/AfterSick/AftersickDEMO-Book.woff2") format("woff2");
   font-weight: 400; /* Normal */
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "After Sick";
-  src: url("./AfterSick/AftersickDEMO-Regular.woff2") format("woff2");
+  src: url("/fonts/AfterSick/AftersickDEMO-Regular.woff2") format("woff2");
   font-weight: 500; /* Medium */
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "After Sick";
-  src: url("./AfterSick/AftersickDEMO-SemiBold.woff2") format("woff2");
+  src: url("/fonts/AfterSick/AftersickDEMO-SemiBold.woff2") format("woff2");
   font-weight: 600; /* SemiBold */
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Neofolia";
-  src: url("./Neofolia/neofolia.ttf");
+  src: url("/fonts/Neofolia/neofolia.ttf");
   font-weight: 400; /* Normal */
   font-style: normal;
+  font-display: swap;
 }
