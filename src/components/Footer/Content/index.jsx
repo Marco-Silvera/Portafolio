@@ -2,7 +2,7 @@
 export default function Content() {
 
     return (
-        <div className='bg-[#575861] py-16 px-5 md:px-12 h-full w-full flex flex-col justify-between select-none'>
+        <div className='bg-[#9898A6] py-16 px-5 md:px-12 h-full w-full flex flex-col justify-between select-none'>
             <Section1 />
             <Section2 />
         </div>
@@ -42,7 +42,7 @@ const Nav = () => {
         <div className='flex w-full justify-center md:justify-end'>
             <ul className="flex gap-5 sm:gap-10 justify-between sm:justify-center h-full w-full max-w-[300px] min-w-[200px]">
                 <li className="group relative inline-block h-full">
-                    <a className="focus:outline-none cursor-pointer" href="https://wa.me/51960153257" target="_blank">
+                    <a className="focus:outline-none cursor-pointer" href="https://wa.me/51960153257" target="_blank" aria-label="Enlace a WhatsApp">
                         <svg
                             fill="#0F1014"
                             viewBox="0 0 256 259"
@@ -61,7 +61,7 @@ const Nav = () => {
                     >WhatsApp</span>
                 </li>
                 <li className="group relative inline-block h-full">
-                    <a className="focus:outline-none cursor-pointer" href="https://www.linkedin.com/in/marcosilvera/" target="_blank">
+                    <a className="focus:outline-none cursor-pointer" href="https://www.linkedin.com/in/marcosilvera/" target="_blank" aria-label="Enlace a Linkedin">
                         <svg
                             width="20"
                             height="20"
@@ -78,7 +78,7 @@ const Nav = () => {
                     >Linkedin</span>
                 </li>
                 <li className="group relative inline-block h-full">
-                    <a className="focus:outline-none cursor-pointer" href="https://github.com/Marco-Silvera" target="_blank">
+                    <a className="focus:outline-none cursor-pointer" href="https://github.com/Marco-Silvera" target="_blank" aria-label="Enlace a Github">
                         <svg
                             viewBox="0 0 256 250"
                             fill="#0F1014"
@@ -96,7 +96,7 @@ const Nav = () => {
                     >Github</span>
                 </li>
                 <li className="group relative inline-block h-full">
-                    <a className="focus:outline-none cursor-pointer" href="mailto:msilveradev@gmail.com">
+                    <a className="focus:outline-none cursor-pointer" href="mailto:msilveradev@gmail.com" aria-label="Enlace a Gmail">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
