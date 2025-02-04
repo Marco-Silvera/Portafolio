@@ -4,6 +4,7 @@ import Footer from "../components/Footer/index";
 import Header from "../components/Header";
 import "../fonts/fonts.css";
 import "../styles/styles.css";
+import ScrollToTop from "../components/ScrollToTop/index.astro";
 ---
 
 <!doctype html>
@@ -71,5 +72,6 @@ import "../styles/styles.css";
     <Header client:load />
     <slot />
     <Footer />
+    <ScrollToTop />
   </body>
 </html>

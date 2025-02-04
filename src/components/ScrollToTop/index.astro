@@ -1,0 +1,39 @@
+---
+
+---
+
+<button
+    id="scroll-to-top"
+    class="fixed bottom-[10px] sm:bottom-5 right-[10px] sm:right-5 bg-[#0F1014] text-[#9898A6] p-2 rounded-full opacity-0 transition-opacity duration-200 border-2 border-[#575861]"
+    aria-label="Volver arriba"
+>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+    >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+</button>
+
+<script>
+    const scrollButton = document.getElementById("scroll-to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollButton.classList.replace("opacity-0", "opacity-100");
+        } else {
+            scrollButton.classList.replace("opacity-100", "opacity-0");
+        }
+    });
+
+    scrollButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
