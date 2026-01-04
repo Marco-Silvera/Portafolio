@@ -6,6 +6,23 @@ import Lenis from "@studio-freight/lenis";
 const items = [
     {
         id: 1,
+        nombre: "Landing Gretta",
+        descripcion:
+            "Aplicación móvil para la emisión de guías electronicas con tan solo una foto.",
+        imagen: "/Gretta-landing.webp",
+        demo: "https://lissa.com.pe/gretta/",
+        repositorio: "https://github.com/Marco-Silvera",
+        path: "/proyecto-1",
+        color: "#BBACAF",
+        bullets: [
+            "Landing con animaciones",
+            "Responsive",
+            "Implementación de mejoras en SEO",
+            "Web optimizada",
+        ],
+    },
+    {
+        id: 1,
         nombre: "Pachamama Turismo Responsable",
         descripcion:
             "Diseño y desarrollo de una web para una agencia de turismo, con un enfoque en funcionalidad, gestión de contenido y experiencia del usuario. Optimizado para SEO.",
