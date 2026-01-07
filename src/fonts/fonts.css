@@ -23,9 +23,9 @@
 }
 
 @font-face {
-  font-family: "Neofolia";
-  src: url("/fonts/Neofolia/neofolia.ttf");
-  font-weight: 400; /* Normal */
+  font-family: 'Neofolia';
+  src: url('/fonts/Neofolia/neofolia.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }

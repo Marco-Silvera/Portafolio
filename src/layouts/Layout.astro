@@ -9,69 +9,81 @@ import ScrollToTop from "../components/ScrollToTop/index.astro";
 
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/M.webp" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/M.webp" />
 
-    <link rel="preload" as="image" href="/images/sobre-mi-header.webp" />
-    <link rel="preload" as="image" href="/images/experiencia-header.webp" />
-    <link rel="preload" as="image" href="/images/proyectos-header.webp" />
-    <link rel="preload" as="image" href="/images/educacion-header.webp" />
-    <link rel="preload" as="image" href="/images/conocimientos-header.webp" />
-    <link rel="preload" as="image" href="/images/contacto-header.webp" />
+        <link rel="preload" as="image" href="/images/sobre-mi-header.webp" />
+        <link rel="preload" as="image" href="/images/experiencia-header.webp" />
+        <link rel="preload" as="image" href="/images/proyectos-header.webp" />
+        <link rel="preload" as="image" href="/images/educacion-header.webp" />
+        <link
+            rel="preload"
+            as="image"
+            href="/images/conocimientos-header.webp"
+        />
+        <link rel="preload" as="image" href="/images/contacto-header.webp" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
-      as="style"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
-      media="print"
-      onload="this.onload=null;this.removeAttribute('media');"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
-      />
-    </noscript>
+        <link
+            rel="preload"
+            href="/fonts/Neofolia/neofolia.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
 
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <meta name="description" content={description} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+            as="style"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+            media="print"
+            onload="this.onload=null;this.removeAttribute('media');"
+        />
+        <noscript>
+            <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+            />
+        </noscript>
 
-    <!-- Open Graph meta tags -->
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
-    <meta property="og:url" content={Astro.site} />
-    <meta property="og:type" content="website" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+        <meta name="description" content={description} />
 
-    <!-- Twitter Card meta tags -->
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={image} />
-    <meta name="twitter:card" content="summary_large_image" />
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
+        <meta property="og:url" content={Astro.site} />
+        <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="/styles/styles.css" />
-  </head>
-  <body class="flex flex-col items-center bg-[#0F1014]">
-    <!-- <div class="fixed inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div> -->
-    <div
-      class="fixed inset-0 -z-10 h-full w-full bg-gradient-to-t from-[#0F1014] to-[#111216]"
-    >
-    </div>
-    <!-- <div class="fixed z-[-2] h-full w-full bg-neutral-500"><div class="absolute inset-0 bg-purple-500 bg-[size:20px_20px] opacity-20 blur-[100px]"></div></div> -->
-    <!-- <div class="fixed inset-0 -z-10 h-full w-full bg-gray-500 [background:radial-gradient(125% 125% at 50% 10%, #ff0000 40%, #00ff00 70%, #0000ff 100%)]"></div> -->
-    <!-- <div class="fixed top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255))]"></div> -->
-    <Header client:load />
-    <slot />
-    <Footer />
-    <ScrollToTop />
-  </body>
+        <!-- Twitter Card meta tags -->
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <link rel="stylesheet" href="/styles/styles.css" />
+    </head>
+    <body class="flex flex-col items-center bg-[#0F1014]">
+        <!-- <div class="fixed inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div> -->
+        <div
+            class="fixed inset-0 -z-10 h-full w-full bg-gradient-to-t from-[#0F1014] to-[#111216]"
+        >
+        </div>
+        <!-- <div class="fixed z-[-2] h-full w-full bg-neutral-500"><div class="absolute inset-0 bg-purple-500 bg-[size:20px_20px] opacity-20 blur-[100px]"></div></div> -->
+        <!-- <div class="fixed inset-0 -z-10 h-full w-full bg-gray-500 [background:radial-gradient(125% 125% at 50% 10%, #ff0000 40%, #00ff00 70%, #0000ff 100%)]"></div> -->
+        <!-- <div class="fixed top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255))]"></div> -->
+        <Header client:load />
+        <slot />
+        <Footer />
+        <ScrollToTop />
+    </body>
 </html>
