@@ -57,6 +57,17 @@ import ScrollToTop from "../components/ScrollToTop/index.astro";
         <title>{title}</title>
         <meta name="description" content={description} />
 
+        <script
+            type="application/ld+json"
+            set:html={JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "Marco Silvera",
+                url: "https://silvera.dev/",
+            })}
+        />
+        <meta property="og:site_name" content="Marco Silvera" />
+
         <!-- Open Graph meta tags -->
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
